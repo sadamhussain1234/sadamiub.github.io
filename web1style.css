@@ -1,0 +1,299 @@
+
+
+
+/* Style the header */
+
+
+.column {
+ color: white;
+    font-family: Copperplate, Papyrus, fantasy;
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+ 
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.a {
+  list-style-type: circle;
+  padding: 8px;
+}
+
+
+
+html {
+  box-sizing: border-box;
+}
+
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column1 {
+  color: white;
+  font-family: Copperplate, Papyrus, fantasy;
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  height: 410px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  background-color: #404040;
+}
+
+.about-section {
+  font-family: Copperplate, Papyrus, fantasy;
+  padding: 20px;
+  text-align: center;
+  background-color: #202020;
+  color: white;
+}
+
+.container1 {
+  padding: 0 16px;
+}
+
+.container1::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: blueviolet;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.img1{
+  
+  width: 250px;
+  height: 200px;
+  padding: 20px 0px 20px 50px;
+}
+
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container2 {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column2 {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column2, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 33%;
+    
+}
+.navbar{
+    display: flex;
+    position: sticky;
+    top: o;
+    cursor: pointer;
+
+}
+.nav-list{
+   background-color: black;
+    width: 70%;
+    display: flex;
+    align-items: center;
+  
+}
+
+.nav-list li {
+    list-style:none;
+    padding: 14px 28px;
+    
+}
+
+.nav-list li a{
+    color: white;
+    text-decoration: none;
+}
+
+.nav-list li a:hover{
+    color: orange;
+    text-decoration: none;
+}
+.rightnav{
+    background-color: black;
+    width: 30%;
+    text-align: right;
+    padding: 0.04%;
+}
+.rightnav:hover{
+
+    color: black;
+}
+#search{
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid white;
+    border-radius: 9px;
+    background: none;
+    background-color: white;
+}
+.background{
+    background-color: rgba(o, o, o, 0.7);
+    background-image: url(https://www.iub.edu.pk/uploads/images/nav/bwn.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+
+}
+.firstsection{
+    background-color: skyblue;
+    height: 50vh;
+}
+.box-main{
+    height: 75%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.firsthalf{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 50%;
+ 
+}
+.text-big{
+    font-size: 30px;
+    color: greenyellow;
+}
+.text-big:hover{
+    font-size: 30px;
+    color: black;
+}
+.text-small{
+    font-size: 20px;
+}
+.btn{
+    padding: 8px 20px;
+    margin: 7px 0;
+    border: 2px solid black;
+    font-size: 16px;
+    border-radius: 2px;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+.btn-grab{
+    padding: 8px 20px;
+    margin: 7px 0;
+    border: 2px solid black;
+    font-size: 16px;
+    border-radius: 2px;
+    background: none;
+    color: white;
+    cursor: pointer;
+
+}
+.btn:hover{
+    padding: 8px 20px;
+    margin: 7px 0;
+    border: 2px solid black;
+    font-size: 16px;
+    border-radius: 2px;
+    background: none;
+    color: orange;
+    cursor: pointer;
+}
+.btn-grab{
+    padding: 12px 40px;
+    margin: 7px 0;
+    border: 2px solid black;
+    font-size: 16px;
+    border-radius: 2px;
+    background-color: orange;
+    color:white;
+    cursor: pointer;
+
+}
